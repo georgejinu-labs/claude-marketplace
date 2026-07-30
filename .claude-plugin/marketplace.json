@@ -1,0 +1,20 @@
+{
+  "name": "georgejinu-labs-marketplace",
+  "owner": {
+    "name": "georgejinu-labs",
+    "url": "https://github.com/georgejinu-labs"
+  },
+  "plugins": [
+    {
+      "name": "dev-toolkit",
+      "description": "Personal dev workflow skills: commit hygiene, debugging, dependency audits, doc sync, env checks, SQL review, test generation, and todo sweeps.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/georgejinu-labs/claude-plugins.git",
+        "path": "plugins/dev-toolkit",
+        "ref": "main",
+        "sha": "3cc7073d1ee6abe3bee088e541a15e0f3469e6d6"
+      }
+    }
+  ]
+}
