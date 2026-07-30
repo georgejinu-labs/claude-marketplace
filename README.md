@@ -22,12 +22,14 @@ no manual edits needed.
 - `dev-toolkit` — commit hygiene, debugging, dependency audits, doc sync,
   env checks, SQL review, test generation, todo sweeps.
 - `knowledge-capture` — `/doc-learning` captures something you just learned
-  and publishes it to Confluence. **Requires** the Atlassian claude.ai
-  connector to be authorized with Confluence access (Jira-only scopes
-  aren't enough) — this is a per-user OAuth connection made in claude.ai
-  connector settings, not something configured in either repo. The skill
-  asks each run which Confluence space/page to file under; nothing is
-  hardcoded.
+  and publishes it to Confluence. Bundles the official Atlassian remote MCP
+  server (`https://mcp.atlassian.com/v1/mcp/authv2`) in its own `.mcp.json`,
+  so it's portable — no claude.ai account connector to pre-configure, no
+  GitHub secret involved. First use prompts a one-time OAuth connect via
+  `/mcp` (per user, per machine). **Requires** Confluence to actually be
+  provisioned on the Atlassian site being used (a Jira-only site won't have
+  it). The skill asks each run which Confluence space/page to file under;
+  nothing is hardcoded.
 
 ## Adding a new plugin to the marketplace
 

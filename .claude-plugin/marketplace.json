@@ -18,7 +18,7 @@
     },
     {
       "name": "knowledge-capture",
-      "description": "Capture things you just learned and publish them to Confluence via the Atlassian Rovo connector. Requires the Atlassian claude.ai connector authorized with Confluence access (Jira-only scopes aren't enough).",
+      "description": "Capture things you just learned and publish them to Confluence. Bundles the official Atlassian remote MCP server, so it works out of the box for anyone who installs it — first use prompts a one-time OAuth connect via /mcp. Requires Confluence to be provisioned on your Atlassian site.",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/georgejinu-labs/claude-plugins.git",
