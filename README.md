@@ -17,6 +17,18 @@ repo, its `notify-marketplace` workflow fires a `repository_dispatch` here,
 and `update-plugin-sha.yml` bumps the matching entry's `sha` and pushes —
 no manual edits needed.
 
+## Plugins
+
+- `dev-toolkit` — commit hygiene, debugging, dependency audits, doc sync,
+  env checks, SQL review, test generation, todo sweeps.
+- `knowledge-capture` — `/doc-learning` captures something you just learned
+  and publishes it to Confluence. **Requires** the Atlassian claude.ai
+  connector to be authorized with Confluence access (Jira-only scopes
+  aren't enough) — this is a per-user OAuth connection made in claude.ai
+  connector settings, not something configured in either repo. The skill
+  asks each run which Confluence space/page to file under; nothing is
+  hardcoded.
+
 ## Adding a new plugin to the marketplace
 
 Add an entry to `plugins[]` in `marketplace.json`:
