@@ -15,6 +15,17 @@
         "ref": "main",
         "sha": "488f99d8bfb0ffb8c26e9d22d495ff3e0653164d"
       }
+    },
+    {
+      "name": "knowledge-capture",
+      "description": "Capture things you just learned and publish them to Confluence via the Atlassian Rovo connector.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/georgejinu-labs/claude-plugins.git",
+        "path": "plugins/knowledge-capture",
+        "ref": "main",
+        "sha": "ee5a3b71004dd3f50287d87143a7caf8d3137734"
+      }
     }
   ]
 }
